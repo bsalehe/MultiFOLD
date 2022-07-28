@@ -13,7 +13,7 @@ The docker container for the MultiFOLD run the following programs:
   Input files directory:
   - `export COLABFOLD_INPUT=/home/intfold/bajuna_test_docker_colabfold_batch/input_files/`
   Output files directory:
-  - `export COLABFOLD_OUPUT=/home/intfold/bajuna_test_docker_colabfold_batch/output_files/`
+  - `export COLABFOLD_OUTPUT=/home/intfold/bajuna_test_docker_colabfold_batch/output_files/`
 - Run this command:
 `sudo docker run -it --gpus all --name colabfold_batch -v $COLABFOLD_INPUT:/colabfold_batch/input_files -v $COLABFOLD_OUTPUT:/colabfold_batch/output_files multifold /colabfold_batch/bin/colabfold_batch /colabfold_batch/input_files /colabfold_batch/output_files`
 
@@ -43,11 +43,9 @@ The docker container for the MultiFOLD run the following programs:
 - Running OpenStructure user after pulling the image can just type:
   `sudo docker run --rm -it --gpus all multifold ost`
 
-## Running voronot-js-voromqa
+## Running voronota-js-voromqa
 To run voronoa-js-voromqa from the host the following step should be done
- Input files directory:
+ Input file directory:
  - Example: /home/intfold/bajuna_test_docker_voronota_js_voromqa/
- Output files directory:
- - export COLABFOLD_OUPUT=/home/intfold/bajuna_test_docker_colabfold_batch/output_files/
 - Run this command:
-`sudo docker run --rm -it --gpus all multifold voronota-js-voromqa -i /voronota-js_release/1EXB_r_l_b.pdb`
+`sudo docker run --rm -it --gpus all -v /home/intfold/bajuna_test_docker_voronota_js_voromqa/:/voronota-js_release/user_data/ multifold voronota-js-voromqa -i /voronota-js_release/user_data/1EXB_r_l_b.pdb`
