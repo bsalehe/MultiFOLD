@@ -24,11 +24,11 @@ The docker container for the MultiFOLD run the following programs:
 ### Outside container
 `sudo docker run --rm --gpus all -v /home/intfold/bajuna_test_docker_DockQ/model:/DockQ/input_model -v /home/intfold/bajuna_test_docker_DockQ/native:/DockQ/native_model multifold $DOCKQ_PYTHONDIR/python3 /DockQ/DockQ.py /DockQ/input_model/1EXB_r_l_b.model.pdb /DockQ/native_model/1EXB_r_l_b.pdb`
 
-Output:
+#### Output:
 `Multi-chain model need sets of chains to group`
 `use -native_chain1 and/or -model_chain1 if you want a different mapping than 1-1`
-`Model chains  : ['A', 'B', 'D', 'C', 'E', 'G', 'F', 'H']``
-`Native chains : ['A', 'B', 'D', 'C', 'E', 'G', 'F', 'H']``
+`Model chains  : ['A', 'B', 'D', 'C', 'E', 'G', 'F', 'H']`
+`Native chains : ['A', 'B', 'D', 'C', 'E', 'G', 'F', 'H']`
 
 #### Instructions on running DockQ in the multifold container from the host
 - To run DockQ from the host the following step should be done
