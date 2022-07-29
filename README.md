@@ -48,6 +48,7 @@ To run voronoa-js-voromqa from the host the following step should be done
  Input file directory:
  - Example: /home/intfold/bajuna_test_docker_voronota_js_voromqa/
 - Run this command:
+
 `sudo docker run --rm -it --gpus all -v /home/intfold/bajuna_test_docker_voronota_js_voromqa/:/voronota-js_release/user_data/ multifold voronota-js-voromqa -i /voronota-js_release/user_data/1EXB_r_l_b.pdb`
 
 ## Generating a full dockerfile from the multifold:latest image
