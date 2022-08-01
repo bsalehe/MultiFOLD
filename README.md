@@ -51,6 +51,15 @@ To run voronoa-js-voromqa from the host the following step should be done
 
 `sudo docker run --rm -it --gpus all -v /home/intfold/bajuna_test_docker_voronota_js_voromqa/:/voronota-js_release/user_data/ multifold voronota-js-voromqa -i /voronota-js_release/user_data/1EXB_r_l_b.pdb`
 
+### Running voronota-js-voromqa in multiple pdb files
+To run multifold with voromqa in multiple pdb files, please use for loop commands as follow:-
+
+Example
+```
+for pdbfile in *.pdb; do sudo docker run --rm -it --gpus all -v /home/intfold/bajuna_test_docker_voronota_js_voromqa/:/voronota-js_release/user_data/ multifold voronota-js-voromqa -i /voronota-js_release/user_data/$pdbfile; done
+
+```
+
 ## Generating a full dockerfile from the multifold:latest image
 The code below was used for this purpose
 `alias dfimage="sudo docker run -v /var/run/docker.sock:/var/run/docker.sock --rm alpine/dfimage'
