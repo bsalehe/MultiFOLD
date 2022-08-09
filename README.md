@@ -229,3 +229,18 @@ ost
 /bin/bash
 
 ```
+
+## Pushing MultiFOLD Container to the Docker Hub
+Chacking first the latest container
+`sudo docker container ls`
+
+`sudo docker images`
+
+Tag the image
+
+`sudo docker image tag multifold:latest bsalehe/multifold_test:latest`
+
+Lastly the image was pushed to my docker hub account "bsalehe" using the following command:
+
+`sudo docker image tag multifold:latest bsalehe/multifold_test:latest`
+
