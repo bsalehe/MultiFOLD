@@ -248,8 +248,10 @@ Lastly the image was pushed to my docker hub account "bsalehe" using the followi
 
 ## Running maxit
 Create the container path to maxit as follows:
+
 - `export MAXIT_PATH=”/home/linuxbrew/.linuxbrew/bin/”`
-Create the in your host machine the paths where input and output files are actually located.
+
+Create in your host machine the paths where input and output files are actually located.
 ```
 MAXIT_INPUT_DIR="/home/intfold/bajuna_test_docker_maxit/inputfile/"
 MAXIT_OUTPUT_DIR="/home/intfold/bajuna_test_docker_maxit/inputfile/"
