@@ -1,7 +1,7 @@
 # MultiFOLD docker container
-Docker implementation of MultiFOLD for predicting 3D protein models for quaternary structures. MoltiFOLD is still under development and is part of the component methods of the IntFOLD 7 (https://www.reading.ac.uk/bioinf/IntFOLD/), which is a server for predicting 3D structures of preoteins and their functions.
+Docker implementation of MultiFOLD for predicting 3D protein models for quaternary structures. MoltiFOLD is still under development and is part of the component methods of the IntFOLD 7 (https://www.reading.ac.uk/bioinf/IntFOLD/), which is a server for predicting 3D structures of preoteins and their functions. This page shows how to run MultiFOLD container in your machine installed with docker client.
 
-The docker container for the MultiFOLD run the following programs:
+The docker container for the MultiFOLD runs the following programs:
 - colabfold_batch (https://github.com/sokrypton/ColabFold) and local colabfold (https://github.com/YoshitakaMo/localcolabfold)
 - DockQ (https://github.com/bjornwallner/DockQ)
 - OpenStructure (https://openstructure.org/docs/2.3.1/install/)
