@@ -6,6 +6,8 @@ The docker container for the MultiFOLD run the following programs:
 - DockQ (https://github.com/bjornwallner/DockQ)
 - OpenStructure (https://openstructure.org/docs/2.3.1/install/)
 - Voronota-js-voromqa (https://github.com/kliment-olechnovic/voronota/tree/master/expansion_js)
+- maxit (binary - https://sw-tools.rcsb.org/apps/MAXIT/source.html, installation - https://sw-tools.rcsb.org/apps/MAXIT/README-source)
+- parallel
 
 ## Running colabfold_batch
 #### Instructions on running DockQ in the multifold container from the host
@@ -243,4 +245,19 @@ Tag the image
 Lastly the image was pushed to my docker hub account "bsalehe" using the following command:
 
 `sudo docker image tag multifold:latest bsalehe/multifold_test:latest`
+
+## Running maxit
+Create the container path to maxit as follows:
+- `export MAXIT_PATH=”/home/linuxbrew/.linuxbrew/bin/”`
+Create the in your host machine the paths where input and output files are actually located.
+```
+MAXIT_INPUT_DIR="/home/intfold/bajuna_test_docker_maxit/inputfile/"
+MAXIT_OUTPUT_DIR="/home/intfold/bajuna_test_docker_maxit/inputfile/"
+```
+To run the maxit with the docker container from the host machine type the following command:
+```
+sudo docker run --rm -it --gpus all -v ${MAXIT_INPUT_DIR}:/maxit/input -v ${MAXIT_OUTPUT_DIR}:/maxit/output/ multifold ${MAXIT_PATH}maxit -input /maxit/input -output /maxit/output -o 1
+```
+
+
 
