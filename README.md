@@ -251,14 +251,18 @@ Create the container path to maxit as follows:
 
 - `export MAXIT_PATH=”/home/linuxbrew/.linuxbrew/bin/”`
 
-Create in your host machine the paths where input and output files are actually located.
+Create in your host machine the paths where input and output files are actually located. Example:
 ```
 MAXIT_INPUT_DIR="/home/intfold/bajuna_test_docker_maxit/inputfile/"
 MAXIT_OUTPUT_DIR="/home/intfold/bajuna_test_docker_maxit/inputfile/"
 ```
+In the MAXIT_INPUT_DIR there is a pdb file named "1EXB_r_l_b.model.pdb"
+
+In the MAXIT_INPUT_DIR is where the output file will be stored after the job run. For instance, "1EXB_r_l_b.model.cif"
+
 To run the maxit with the docker container from the host machine type the following command:
 ```
-sudo docker run --rm -it --gpus all -v ${MAXIT_INPUT_DIR}:/maxit/input -v ${MAXIT_OUTPUT_DIR}:/maxit/output/ multifold ${MAXIT_PATH}maxit -input /maxit/input -output /maxit/output -o 1
+sudo docker run --rm -it --gpus all -v ${MAXIT_INPUT_DIR}:/maxit/input -v ${MAXIT_OUTPUT_DIR}:/maxit/output/ multifold ${MAXIT_PATH}maxit -input /maxit/input/1EXB_r_l_b.model.pdb -output /maxit/output/1EXB_r_l_b.model.cif -o 1
 ```
 
 
