@@ -234,10 +234,10 @@ ost
 
 ## Pushing MultiFOLD Container to the Docker Hub
 Chacking first the latest container
-`sudo docker container ls`
-
-`sudo docker images`
-
+```
+sudo docker container ls
+sudo docker images
+```
 Tag the image
 
 `sudo docker image tag multifold:latest bsalehe/multifold_test:latest`
@@ -247,6 +247,20 @@ Lastly the image was pushed to my docker hub account "bsalehe" using the followi
 `sudo docker image tag multifold:latest bsalehe/multifold_test:latest`
 
 ## Running maxit
+Installing maxit in the container first required linux homebrew package manager: https://www.how2shout.com/linux/how-to-install-brew-ubuntu-20-04-lts-linux/
+
+Then write the following command:
+```
+sudo apt update
+sudo apt-get install build-essential
+sudo apt install git -y
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+brew install brewsci/bio/maxit
+```
+
+### Instructions to run in the host machine (docker client)
+
 Create the container path to maxit as follows:
 
 - `export MAXIT_PATH=”/home/linuxbrew/.linuxbrew/bin/”`
