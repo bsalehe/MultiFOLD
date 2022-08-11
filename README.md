@@ -249,7 +249,7 @@ Lastly the image was pushed to my docker hub account "bsalehe" using the followi
 ## Running maxit
 Installing maxit in the container first required linux homebrew package manager: https://www.how2shout.com/linux/how-to-install-brew-ubuntu-20-04-lts-linux/
 
-Then write the following command:
+Then write the following commands:
 ```
 sudo apt update
 sudo apt-get install build-essential
