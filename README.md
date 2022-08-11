@@ -1,4 +1,4 @@
-# MultiFOLD_docker
+# MultiFOLD docker container
 Docker implementation of MultiFOLD for predicting 3D protein models for quaternary structures. MoltiFOLD is still under development and is part of the component methods of the IntFOLD 7 (https://www.reading.ac.uk/bioinf/IntFOLD/), which is a server for predicting 3D structures of preoteins and their functions.
 
 The docker container for the MultiFOLD run the following programs:
