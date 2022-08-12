@@ -17,6 +17,7 @@ The docker container for the MultiFOLD runs the following programs:
   Output files directory:
   - `export COLABFOLD_OUTPUT=/home/intfold/bajuna_test_docker_colabfold_batch/output_files/`
 - Run this command:
+
 `sudo docker run -it --gpus all --name colabfold_batch -v $COLABFOLD_INPUT:/colabfold_batch/input_files -v $COLABFOLD_OUTPUT:/colabfold_batch/output_files multifold /colabfold_batch/bin/colabfold_batch /colabfold_batch/input_files /colabfold_batch/output_files`
 
 ## Running DockQ
