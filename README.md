@@ -268,7 +268,7 @@ Create the container path to maxit as follows:
 Create in your host machine the paths where input and output files are actually located. Example:
 ```
 MAXIT_INPUT_DIR="/home/intfold/bajuna_test_docker_maxit/inputfile/"
-MAXIT_OUTPUT_DIR="/home/intfold/bajuna_test_docker_maxit/inputfile/"
+MAXIT_OUTPUT_DIR="/home/intfold/bajuna_test_docker_maxit/outputfile/"
 ```
 In the MAXIT_INPUT_DIR there is a pdb file named "1EXB_r_l_b.model.pdb"
 
