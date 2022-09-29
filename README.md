@@ -280,7 +280,7 @@ To run the maxit with the docker container from the host machine type the follow
 sudo docker run --rm -it --gpus all -v ${MAXIT_INPUT_DIR}:/maxit/input -v ${MAXIT_OUTPUT_DIR}:/maxit/output/ multifold ${MAXIT_PATH}maxit -input /maxit/input/1EXB_r_l_b.model.pdb -output /maxit/output/1EXB_r_l_b.model.cif -o 1
 ```
 
-## Runniing Multifold with script
+## Running Multifold with script
 The simplest way to run MultiFOLD container is to use a script "run_MultiFOLD_docker.sh" as follow
 ```
 sudo docker run -it --gpus all -v /home/intfold/Docker/MultiFOLD_Docker_run/MultiFOLD_input:/MultiFOLD_input -v /home/intfold/Docker/MultiFOLD_Docker_run/MultiFOLD_output:/MultiFOLD_output mcguffin/multifold /MultiFOLD/run_MultiFOLD_docker.sh T1197 T1197.fasta A1
