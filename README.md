@@ -1,4 +1,4 @@
-# NOTE: The actual docker package for MultiFOLD, MultiFOLD_refine and ModFOLDdock is available here: https://hub.docker.com/r/mcguffin/multifold
+# NOTE: The docker package for MultiFOLD, MultiFOLD_refine and ModFOLDdock is available here: https://hub.docker.com/r/mcguffin/multifold
 
 Below is just a log of the procedure that was used to implement the initial container...
 
