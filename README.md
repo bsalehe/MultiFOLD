@@ -1,6 +1,22 @@
 # NOTE: The docker package for MultiFOLD, MultiFOLD_refine and ModFOLDdock is available here: https://hub.docker.com/r/mcguffin/multifold
 
-Below is just a log of the procedure that was used to implement the initial container...
+Docker Pull Command: docker pull mcguffin/multifold
+
+A docker container for the MultiFOLD, ModFOLDdock and MultiFOLD_refine methods developed by the <a href="https://www.reading.ac.uk/bioinf/">McGuffin group</a> for <a href="https://predictioncenter.org/casp15/">CASP15</a>.
+
+Please cite the relevant papers:
+MultiFOLD reference:
+McGuffin, L. J., Edmunds N. S., Genc, A. G., Alharbi, S. M. A., Salehe, B. R. and Adiyaman, R. (2023) Prediction of protein structures, functions and interactions using the IntFOLD7, MultiFOLD and ModFOLDdock servers. Nucleic Acids Research. gkad297. <a href="https://doi.org/10.1093/nar/gkad297">DOI</a> <a href="https://pubmed.ncbi.nlm.nih.gov/37102670/">PubMed</a>
+
+ModFOLDdock reference:
+Edmunds, N. S., Alharbi, S. M. A.,  Genc, A. G., Adiyaman, R. and McGuffin, L. J. (2023) Estimation of Model Accuracy in CASP15 Using the ModFOLDdock Server. Proteins, Epub ahead of print. <a href="https://doi.org/10.1002/prot.26532">DOI</a> <a href="https://pubmed.ncbi.nlm.nih.gov/37314190/">PubMed</a>
+
+MultiFOLD_refine reference:
+Adiyaman, R., Edmunds, N. S.,  Genc, A. G., Alharbi, S. M. A. and McGuffin, L. J. (2023) Improvement of protein tertiary and quaternary structure predictions using the ReFOLD refinement method and the AlphaFold2 recycling process. Bioinformatics Advances, vbad078. <a href="https://doi.org/10.1093/bioadv/vbad078">DOI</a> <a href="https://pubmed.ncbi.nlm.nih.gov/"></a>
+
+# FURTHER INSTRUCTIONS ARE HERE: https://hub.docker.com/r/mcguffin/multifold
+
+# Below is a log of the initial procedure that was used to implement the initial container...
 
 # MultiFOLD docker container
 Docker implementation of MultiFOLD for predicting 3D protein models for quaternary structures. MultiFOLD is still under development and is part of the component methods of the IntFOLD 7 (https://www.reading.ac.uk/bioinf/IntFOLD/), which is a server for predicting 3D structures of proteins and their functions. This page shows how to run MultiFOLD container in your machine installed with docker client.
