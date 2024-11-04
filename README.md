@@ -16,7 +16,7 @@ Adiyaman, R., Edmunds, N. S.,  Genc, A. G., Alharbi, S. M. A. and McGuffin, L. J
 
 # FURTHER INSTRUCTIONS ARE HERE: https://hub.docker.com/r/mcguffin/multifold
 
-# Below is a log of the initial procedure that was used to implement the initial container...
+# Below is a log of the initial procedure that was used to implement the test container...
 
 # MultiFOLD docker container
 Docker implementation of MultiFOLD for predicting 3D protein models for quaternary structures. MultiFOLD is still under development and is part of the component methods of the IntFOLD 7 (https://www.reading.ac.uk/bioinf/IntFOLD/), which is a server for predicting 3D structures of proteins and their functions. This page shows how to run MultiFOLD container in your machine installed with docker client.
